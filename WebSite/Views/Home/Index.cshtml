@@ -1,45 +1,49 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>A little bit about me</h2>
+</hgroup>
+
+<table>
+    <tr>
+        <!--left hand site - photo/headshot-->
+        <td>
+            <img src="~/Images/headshot.png" alt="Daniel's headshot photograph" />
+        </td>
+
+        <td style="vertical-align:top">
+            <!-- main content -->
+            <h3>Hey there!</h3>
+
             <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+                My name is Daniel, and I am a <i>developing</i> software engineer currently based in South <a href="http://visit-belfast.com/" title="Visit Belfast" target="_blank">Belfast.</a>
+
             </p>
-        </div>
-    </section>
-}
-<h3>We suggest the following:</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-    </li>
 
-    <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-    </li>
+            <p>
+                I have an interest and experience in a wide range of technologies, but operate professionally mainly within the .NET stack, so that would be including but not limited to:
+            </p>
+            
+                <ul>
+                    <li>C# - including passing Microsoft Exam #70-483</li>
+                    <li>VB.NET</li>
+                    <li>ASP.NET - WebForms & MVC</li>
+                    <li>WPF</li>
+                    <li>Windows Phone</li>
+                    <li>Silverlight</li>
+                    <li>WCF</li>
+                    <li>SQL (SQL Server & Oracle 11)</li>
+                    <li>JavaScript / jQuery</li>
+                </ul>
+            <p>
+                I have roughly 3 years commercial .NET experience (including a year's placement as a Support Developer). This is in addition to any projects I have undertaken personally or for education since starting my Degree (or even before then), which could be in a wide array of different languages and frameworks depending on my mood (or my lecturer) at the time.
+            </p>
+            <p>For more information, either check out @Html.ActionLink("my projects", "Projects", "Home") or feel free to @Html.ActionLink("get in touch", "Contact", "Home").
 
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
-    </li>
-</ol>
+            </p>
+        </td>
+    </tr>
+</table>
