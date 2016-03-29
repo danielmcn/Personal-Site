@@ -14,7 +14,7 @@ namespace WebService
     {
         public string GetData(int value)
         {
-            return string.Format("You entered: {0}", value);
+            return string.Format("You entered test: {0}", value);
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
